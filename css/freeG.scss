@@ -1,0 +1,169 @@
+$darkPrimary :#455A64;
+$defaultPrimary :#607D8B;
+$lightPrimary :#CFD8DC;
+$textPrimary :#FFFFFF;
+$accent :#FFC107;
+$primaryText :#212121;
+$secondaryText :#757575;
+$divider :#BDBDBD;
+$success:#3d877b;
+$textShadow:0px 2px 1px rgba(0, 0, 0, 0.7);
+
+
+/*GLOBAL*/
+
+a {
+    color: $accent;
+    text-shadow: $textShadow;
+}
+
+.title h3,
+.title h2,
+.title h1 {
+    color: $darkPrimary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $darkPrimary;
+}
+
+/*HEADER*/
+
+#header {
+    background: $defaultPrimary;
+}
+
+.nav_ready ul li a {
+    color: $accent;
+    text-shadow: $textShadow;
+}
+
+.nav_ready ul li.active a {
+    color: darken($accent, 2%);
+    background-color: lighten($darkPrimary, 5%);
+}
+
+.nav_ready ul li a:hover {
+    color: darken($accent, 2%);
+    background-color: lighten($darkPrimary, 10%);
+}
+
+li.switcher {
+    background: $darkPrimary;
+}
+
+
+/*grid title*/
+
+.top .grid3 .img h3 {
+    background: $defaultPrimary;
+
+}
+
+.top .grid3 .img:after {
+    background: $darkPrimary;
+}
+
+
+/*tabs*/
+
+.btn_wrapper div.active_tab i {
+    color: $defaultPrimary;
+    &:hover {
+        color: $defaultPrimary;
+    }
+}
+
+.btn_wrapper div:hover i {
+    color: $darkPrimary;
+}
+
+/*hover tab*/
+
+.btn_wrapper > div:before {
+    background: $defaultPrimary;
+}
+
+/*active tab*/
+
+.btn_wrapper > div.active_tab:before {
+    background: $darkPrimary;
+}
+
+
+/*SERVICES*/
+
+.body_grid .grid3 > div:hover i {
+    color: $defaultPrimary;
+}
+
+
+.body_grid button {
+    background: $darkPrimary;
+    color: lighten($accent, 20%);
+}
+
+
+textarea:hover,
+select:hover,
+input:hover {
+    border-color: $defaultPrimary;
+}
+
+input:focus {
+    border: 1px solid $darkPrimary;
+    box-shadow: inset 2px 3px 10px -7px #000;
+}
+
+
+
+
+
+#footer .right i {
+    background: $secondaryText;
+}
+
+#footer a {
+    color: $secondaryText;
+}
+
+
+
+
+
+
+/*STYLE*/
+
+input[type="submit"] {
+    background: $success;
+    color: $accent;
+    border: 1px solid $success;
+    cursor: pointer;
+    &:active {
+        background: lighten($success, 5%);
+        color: $accent;
+        border: 1px solid $success;
+    }
+    &:focus {
+        background: $success;
+        color: $accent;
+        border: 1px solid $success;
+    }
+}
+
+
+.section.top {
+    li {
+        margin-left: 12px;
+    }
+}
+
+
+#maina {
+    background-image: url(../images/minimal-gray-to-white-gradient-wallpapers1.png);
+}
