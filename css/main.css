@@ -21,6 +21,7 @@
 
 /* LANGUAGE */
 .lang {
+	display: none;
 	position: relative;
     top: 25px;
 	right: 30px;
@@ -341,13 +342,13 @@ li.switcher.en:after {
 	clear: both;
 }
 .tabs_body h2, .tabs_body h3, .tabs_body h1 {
-	margin: 0 0 25px 0;
+	/*margin: 0 0 25px 0;*/
 }
 
 /* BODY GRID */
 .body_grid {
 	position: relative;
-	background: url(../images/minimal-gray-to-white-gradient-wallpapers1.jpg) no-repeat fixed center center;
+	/*background: url(../images/minimal-gray-to-white-gradient-wallpapers1.jpg) no-repeat fixed center center;*/
 	background-size: cover;
 	border: none;
 }

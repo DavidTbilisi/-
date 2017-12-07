@@ -45,5 +45,38 @@ function tabFunc(someTab) {
 // scroll2id
 
 $(".nav_ready a[href*='#']").mPageScroll2id({
-    offset: 20
+    offset: 75
+});
+
+
+// placeholder Remover
+function pl(className){
+    jQuery(className).data  ('holder',jQuery(className).attr('placeholder'));
+    jQuery(className).focusin (function(){ jQuery(this).attr('placeholder',''); });
+    jQuery(className).focusout(function(){ jQuery(this).attr('placeholder',jQuery(this).data('holder'));
+    });
+}
+// class of input;
+pl('.name');
+pl('.phone');
+
+
+
+
+// mail send;
+
+var data = {
+    name: $("#name").val(),
+    phone: $("#phone").val(),
+    cms: $("#cms").val(),
+    comment: $("#comment").val(),
+    location: $(".location").val()
+};
+$.ajax({
+    type: "POST",
+    url: "mail.php",
+    data: data,
+    success: function(){
+        console.log(data);
+    }
 });

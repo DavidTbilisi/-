@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$modal-width:400px;
+$modal-height:auto;
+
+
+
+$c-light:#FBBA14;
+$c-dark:black;
+
+.t-color-light {
+    color: $c-light;
+}
+
+.t-color-dark {
+    color: $c-dark;
+}
+
+
+
+.center {
+    text-align: center;
+}
+
+
+.vh-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.m-bg {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    cursor: pointer;
+    transition: all 1s ease;
+    .m-wrap {
+        cursor: default;
+        width: $modal-width;
+        height: $modal-height;
+        position: relative;
+        padding: 20px;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        box-shadow: 0px 0px 65px -13px black;
+        overflow: hidden;
+        .m-header {
+            margin-top: 20px;
+
+        }
+        input:not([type='submit']) {
+            width: 100%;
+            border: 2px solid #fff;
+            border-radius: 5px;
+            background: #fff;
+            color: #000;
+            font-size: 18px;
+            line-height: 59px;
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 59px;
+            margin-bottom: 15px;
+            outline: none;
+        }
+        input[type="submit"] {
+            position: relative;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 80px;
+            line-height: 80px;
+            font-size: 40px;
+            color: #fff;
+            font-family: "Arkiv", sans-serif;
+            text-transform: uppercase;
+            background: linear-gradient(to bottom, $c-light 0%, $c-light 100%);
+            background-size: contain;
+            transition: all 1s ease ;
+            &:hover {
+                background: linear-gradient(to bottom, $c-light 0%, darken($c-light, 15%) 100%);
+            }
+        }
+    }
+    .m-close-btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        cursor: pointer;
+        /*margin: 5px;*/
+    }
+}
+
+
+.m-hide {
+    display: none;
+    opacity: 0;
+}
+
+.m-show {
+    @extend .vh-center;
+    opacity: 1;
+}

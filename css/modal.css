@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.t-color-light {
+  color: #FBBA14; }
+
+.t-color-dark {
+  color: black; }
+
+.center {
+  text-align: center; }
+
+.vh-center, .m-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.f-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.m-bg {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+  .m-bg .m-wrap {
+    cursor: default;
+    width: 400px;
+    height: auto;
+    position: relative;
+    padding: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    -webkit-box-shadow: 0px 0px 65px -13px black;
+    box-shadow: 0px 0px 65px -13px black;
+    overflow: hidden; }
+    .m-bg .m-wrap .m-header {
+      margin-top: 20px; }
+    .m-bg .m-wrap input:not([type='submit']) {
+      width: 100%;
+      border: 2px solid #fff;
+      border-radius: 5px;
+      background: #fff;
+      color: #000;
+      font-size: 18px;
+      line-height: 59px;
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 59px;
+      margin-bottom: 15px;
+      outline: none; }
+    .m-bg .m-wrap input[type="submit"] {
+      position: relative;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 80px;
+      line-height: 80px;
+      font-size: 40px;
+      color: #fff;
+      font-family: "Arkiv", sans-serif;
+      text-transform: uppercase;
+      background: -webkit-gradient(linear, left top, left bottom, from(#FBBA14), to(#FBBA14));
+      background: linear-gradient(to bottom, #FBBA14 0%, #FBBA14 100%);
+      background-size: contain;
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease; }
+      .m-bg .m-wrap input[type="submit"]:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#FBBA14), to(#bf8a03));
+        background: linear-gradient(to bottom, #FBBA14 0%, #bf8a03 100%); }
+  .m-bg .m-close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    /*margin: 5px;*/ }
+
+.m-hide {
+  display: none;
+  opacity: 0; }
+
+.m-show {
+  opacity: 1; }

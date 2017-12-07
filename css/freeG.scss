@@ -11,7 +11,9 @@ $textShadow:0px 2px 1px rgba(0, 0, 0, 0.7);
 
 
 /*GLOBAL*/
-
+.hidden{
+    display: none;
+}
 a {
     color: $accent;
     text-shadow: $textShadow;
@@ -32,6 +34,16 @@ h6 {
     color: $darkPrimary;
 }
 
+
+
+.section {
+    padding: 20px 0;
+}
+
+.title {
+    margin: 0 0 20px 0;
+}
+
 /*HEADER*/
 
 #header {
@@ -41,9 +53,10 @@ h6 {
 .nav_ready ul li a {
     color: $accent;
     text-shadow: $textShadow;
+    transition: all 1s ease;
 }
 
-.nav_ready ul li.active a {
+.nav_ready ul li a.mPS2id-highlight {
     color: darken($accent, 2%);
     background-color: lighten($darkPrimary, 5%);
 }
@@ -59,7 +72,12 @@ li.switcher {
 
 
 /*grid title*/
-
+#main{
+    p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}
 .top .grid3 .img h3 {
     background: $defaultPrimary;
 
