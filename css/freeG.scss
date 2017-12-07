@@ -115,9 +115,17 @@ li.switcher {
 
 
 /*SERVICES*/
-
+#services .title h3,
+#services .title h2,
+#services .title h1{
+    color: #f7f7fb;
+}
 .body_grid .grid3 > div:hover i {
     color: $defaultPrimary;
+}
+
+.body_grid:after{
+    background: rgba(255, 255, 255, 0.20);
 }
 
 

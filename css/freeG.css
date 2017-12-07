@@ -75,8 +75,16 @@ li.switcher {
   background: #455A64; }
 
 /*SERVICES*/
+#services .title h3,
+#services .title h2,
+#services .title h1 {
+  color: #f7f7fb; }
+
 .body_grid .grid3 > div:hover i {
   color: #607D8B; }
+
+.body_grid:after {
+  background: rgba(255, 255, 255, 0.2); }
 
 .body_grid button {
   background: #455A64;
