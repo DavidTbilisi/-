@@ -273,7 +273,7 @@
 
             <div class="flex1">
                 <div class="right">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a target="_blank" href="http://fb.me/getsite.ge"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
